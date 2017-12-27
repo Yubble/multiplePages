@@ -2,7 +2,6 @@ const webpack = require('webpack');
 const path = require('path');
 const htmlWebpackPlugin = require('html-webpack-plugin');
 
-
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 // 用以获取需要导入的js文件数组
@@ -24,7 +23,9 @@ const webpackPlugins = [
   }),
 
   /* 抽取出chunk的css */
-  new ExtractTextPlugin('[name]/style.css'),
+  new ExtractTextPlugin('[name]/static/style.css'),
+  
+  new webpack.HotModuleReplacementPlugin()
 
 ];
 
@@ -35,7 +36,6 @@ for(let i in pageArr) {
     template: `./pages/${i}/index.html`,
     chunks: [i],
     excludeChunks: ['./common/script']
-    // template: `./pages/${i}/script.js`
   });
   webpackPlugins.push(htmlPlugin);
 }

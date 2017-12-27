@@ -1,1 +1,3 @@
-console.log(2);
+import { $get } from '../../common/script/http'
+
+$get();

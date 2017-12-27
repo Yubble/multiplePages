@@ -27,7 +27,7 @@
   },
   "scripts": {
     "dev": "webpack",
-    "start": "webpack-dev-server"
+    "start": "webpack-dev-server -- testing"
   },
   "author": "",
   "license": "ISC"
