@@ -1,4 +1,4 @@
-// 首先存储好当前环境
+// 首先存储好当前环境变量
 if (process.argv[3] === 'testing') {
   process.env.NODE_ENV = 'develop';
 } else {
