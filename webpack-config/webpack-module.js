@@ -6,7 +6,6 @@ const assetpatch = function (paths) {
 }
 
 let imgSrc = '';
-console.log('当前环境是：' + process.env.NODE_ENV);
 // 判断是否开发或生产环境
 if (process.env.NODE_ENV === 'develop') {
   // 修改图片路径
