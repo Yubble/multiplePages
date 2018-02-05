@@ -26,8 +26,8 @@
     "webpack-dev-server": "^2.9.7"
   },
   "scripts": {
-    "dev": "webpack",
-    "start": "webpack-dev-server -- testing"
+    "start": "webpack -- server",
+    "test": "webpack"
   },
   "author": "",
   "license": "ISC"

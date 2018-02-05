@@ -1,5 +1,5 @@
 // 首先存储好当前环境变量
-if (process.argv[3] === 'testing') {
+if (process.argv[3] === 'server') {
   process.env.NODE_ENV = 'develop';
 } else {
   process.env.NODE_ENV = 'production';
