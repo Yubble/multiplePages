@@ -5,15 +5,14 @@ const assetpatch = function (paths) {
   return path.posix.join("/static", paths)
 }
 
-let imgSrc = '';
+let imgSrc = assetpatch( 'img/[name]-[hash:7].[ext]' );
 // 判断是否开发或生产环境
-if (process.env.NODE_ENV === 'develop') {
-  // 修改图片路径
-  imgSrc = 'static/img/[name]-[hash:7].[ext]';
-} else {
-  imgSrc = assetpatch( 'img/[name]-[hash:7].[ext]' );
-}
-
+// if (process.env.NODE_ENV === 'develop') {
+//   // 修改图片路径
+//   imgSrc = 'static/img/[name]-[hash:7].[ext]';
+// } else {
+//   imgSrc = assetpatch( 'img/[name]-[hash:7].[ext]' );
+// }
 
 webpackModule = {
   rules: [

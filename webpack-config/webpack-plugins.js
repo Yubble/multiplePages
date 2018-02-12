@@ -4,6 +4,13 @@ const htmlWebpackPlugin = require('html-webpack-plugin');
 
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
+// 清除多余update文件
+const CleanWebpackPlugin = require('clean-webpack-plugin');
+
+var fs = require("fs");
+//设置为你的目标文件夹地址
+var buildDir = './dist/';
+
 // 用以获取需要导入的js文件数组
 const { getEntry } = require('./util');
 
@@ -22,11 +29,18 @@ const webpackPlugins = [
     'window.$': 'jquery'
   }),
 
+  /* 清除多余的update日志文件 */
+  new CleanWebpackPlugin(['dist/*.json','dist/*.js'], {
+    root:__dirname.replace('/webpack-config',''),
+    watch: true
+  }),
+
   /* 抽取出chunk的css */
   new ExtractTextPlugin('[name]/static/style.css'),
   
+  /* 热插拔，监听文件变化 */ 
   new webpack.HotModuleReplacementPlugin()
-
+  
 ];
 
 var pageArr = getEntry();

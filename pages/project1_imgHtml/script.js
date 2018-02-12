@@ -4,7 +4,7 @@ import './style.scss'
 c();
 
 (() => {
-  console.log(3453);
+  console.log(33);
 })();
 
 console.log($("#box1").text());

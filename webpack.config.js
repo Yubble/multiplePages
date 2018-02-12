@@ -18,6 +18,7 @@ const webpackModule = require('./webpack-config/webpack-module');
 const { rules } = webpackModule;
 
 module.exports = {
+  watch: true,
   // 项目入口
   entry: projectList,
   // 项目出口
@@ -33,13 +34,16 @@ module.exports = {
   devServer: {
     open: true,       // 自动打开浏览器
     port: 8090,
-    // 本地资源的输出路径
-    // contentBase: `./pages/${devProject}`,
-    contentBase: './pages',
-    publicPath: '/',
+    contentBase: './dist',
+    publicPath: '/assets',
     inline: true, // 可以监控js变化
     hot: true, // 热启动
-    compress: true,
-    watchContentBase: false
+    // compress: false,
+    // watchContentBase: true,
+    // clientLogLevel: "none",
+    // watchOptions: {
+    //   aggregateTimeout: 300,
+    //   poll: true
+    // }
   }
 }
