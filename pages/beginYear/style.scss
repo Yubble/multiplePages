@@ -1,0 +1,129 @@
+@import '../../common/style/_reset.scss';
+@import '../../common/style/_app.scss';
+@import '../../common/style/_common.scss';
+
+.wrap {
+  width: 100%;
+  position: relative;
+
+  .rule-btn {
+    position: absolute;
+    top: p2r(51);
+    right: p2r(85);
+    @include font-dpr(28);
+    color: #ffffff;
+  }
+
+  .banner {
+    img {
+      width: 100%;
+      display: block;
+    }
+  }
+
+  .main {
+    height: p2r(980);
+    background: url('../assest/beginYear/bg2.png') no-repeat;
+    background-size: 100% 100%;
+
+    .red-wrap {
+      @include box-model;
+      @include justifyBet;
+      width: p2r(670);
+      margin: 0 auto;
+      padding: p2r(10) 0 p2r(15);
+    }
+
+    .red-box {
+      height: p2r(358);
+      width: p2r(320);
+      position: relative;
+
+      .getRed-box {
+        width: 100%;
+        position: absolute;
+        text-align: center;
+        bottom: p2r(22);
+
+        .getRed-btn {
+          background: #eb3728;
+          color: #ffffff;
+          display: inline-block;
+          padding: p2r(12);
+          border-radius: 5px;
+          @include font-dpr(24);
+
+          &.disable {
+            background: #c4c4c4;
+            color: #868686;
+          }
+        }
+      }
+
+      &.per100 {
+        background: url('../assest/beginYear/btn_bg_100.png') no-repeat;
+        background-size: 100% 100%;
+      }
+
+      &.per50 {
+        background: url('../assest/beginYear/btn_bg_50.png') no-repeat;
+        background-size: 100% 100%;
+      }
+
+      &.per30 {
+        background: url('../assest/beginYear/btn_bg_30.png') no-repeat;
+        background-size: 100% 100%;
+      }
+
+      &.per15 {
+        background: url('../assest/beginYear/btn_bg_15.png') no-repeat;
+        background-size: 100% 100%;
+      }
+    }
+
+    .loan_btn {
+      height: p2r(100);
+      width: p2r(669);
+      margin: p2r(30) auto 0;
+      display: block;
+
+      img {
+        display: block;
+        width: 100%;
+      }
+    }
+
+    .footnote {
+      margin-top: p2r(18);
+      p {
+        @include font-dpr(22);
+        color: #ca3cf2;
+        text-align: center;
+      }
+    }
+
+  }
+
+}
+
+.dialog-figure {
+  width: p2r(620);
+  margin: p2r(280) auto 0;
+
+  img {
+    width: 100%;
+    display: block;
+  }
+}
+
+.close_btn {
+  width: p2r(50);
+  height: p2r(50);
+  margin: p2r(72) auto 0;
+  display: block;
+  img {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+}

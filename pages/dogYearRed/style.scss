@@ -1,0 +1,74 @@
+@import '../../common/style/_reset.scss';
+@import '../../common/style/_app.scss';
+
+body,html {
+  height: 100%;
+  width: 100%;
+}
+
+.wrap {
+  background: url('../assest/dogYearRed/bg.jpg') no-repeat;
+  background-size: 100% 100%;
+  height: p2r(1337);
+  padding-top: p2r(360);
+  box-sizing: border-box;
+  position: relative;
+
+  .title {
+    width: p2r(606);
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    margin-left: p2r(-328);
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .tips {
+    width: p2r(404);
+    height: p2r(88);
+    margin: 0 auto;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  // 红包
+  .redpacket {
+    width: p2r(562);
+    margin: 0 auto;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  // 钱雨
+  .rain-bg {
+    width: p2r(720);
+    height: p2r(1093);
+    position: absolute;
+    margin-left: p2r(-360);
+    top: p2r(180);
+    left: 50%;
+    background: url('../assest/dogYearRed/rain.png') no-repeat;
+    background-size: 100% 100%;
+  }
+
+  // 小狗
+  .dog {
+    height: p2r(367);
+    width: p2r(242);
+    position: absolute;
+    bottom: 0;
+    left: 45%;
+    
+    img {
+      width: 100%;
+      display: block;
+    }
+  }
+}

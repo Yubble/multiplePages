@@ -1,0 +1,25 @@
+@import '../../common/style/_reset.scss';
+@import '../../common/style/_app.scss';
+
+body{
+  overflow-y: auto;
+}
+
+.wrap {
+  width: p2r(750);
+  margin: 0 auto;
+
+  a {
+    display: block;
+    margin-top: -1px;
+  }
+
+  .last-figure {
+    margin-top: -1px;
+  }
+
+  img {
+    width: 100%;
+    display: block;
+  }
+}

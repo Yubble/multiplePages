@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- 视图窗口，移动端特属的标签。 -->
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no" />
+  <!-- 是否启动webapp功能，会删除默认的苹果工具栏和菜单栏。 -->
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <!-- 这个主要是根据实际的页面设计的主体色为搭配来进行设置。 -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <!-- 忽略页面中的数字识别为电话号码,email识别 -->
+  <meta name="format-detection"content="telephone=no, email=no" />
+  <!-- 启用360浏览器的极速模式(webkit) -->
+  <meta name="renderer" content="webkit">
+  <!-- 避免IE使用兼容模式 -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+  <meta name="HandheldFriendly" content="true">
+  <!-- 微软的老式浏览器 -->
+  <meta name="MobileOptimized" content="320">
+  <!-- uc强制竖屏 -->
+  <meta name="screen-orientation" content="portrait">
+  <!-- QQ强制竖屏 -->
+  <meta name="x5-orientation" content="portrait">
+  <!-- UC强制全屏 -->
+  <meta name="full-screen" content="yes">
+  <!-- QQ强制全屏 -->
+  <meta name="x5-fullscreen" content="true">
+  <!-- UC应用模式 -->
+  <meta name="browsermode" content="application">
+  <!-- QQ应用模式 -->
+  <meta name="x5-page-mode" content="app"> 
+  <!-- windows phone 点击无高光 -->
+  <meta name="msapplication-tap-highlight" content="no">
+  <title>开年有礼勇往向钱</title>
+  <script type="text/javascript">
+    !function(a,b){function c(){var b=f.getBoundingClientRect().width;b/i>540&&(b=540*i);var c=b/10;f.style.fontSize=c+"px",k.rem=a.rem=c}var d,e=a.document,f=e.documentElement,g=e.querySelector('meta[name="viewport"]'),h=e.querySelector('meta[name="flexible"]'),i=0,j=0,k=b.flexible||(b.flexible={});if(g){var l=g.getAttribute("content").match(/initial\-scale=([\d\.]+)/);l&&(j=parseFloat(l[1]),i=parseInt(1/j))}else{if(h){var m=h.getAttribute("content");if(m){var n=m.match(/initial\-dpr=([\d\.]+)/),o=m.match(/maximum\-dpr=([\d\.]+)/);n&&(i=parseFloat(n[1]),j=parseFloat((1/i).toFixed(2))),o&&(i=parseFloat(o[1]),j=parseFloat((1/i).toFixed(2)))}}}if(!i&&!j){var p=a.navigator.userAgent,q=(!!p.match(/android/gi),!!p.match(/iphone/gi)),r=q&&!!p.match(/OS 9_3/),s=a.devicePixelRatio;i=q&&!r?s>=3&&(!i||i>=3)?3:s>=2&&(!i||i>=2)?2:1:1,j=1/i}if(f.setAttribute("data-dpr",i),!g){if(g=e.createElement("meta"),g.setAttribute("name","viewport"),g.setAttribute("content","initial-scale="+j+", maximum-scale="+j+", minimum-scale="+j+", user-scalable=no"),f.firstElementChild){f.firstElementChild.appendChild(g)}else{var t=e.createElement("div");t.appendChild(g),e.write(t.innerHTML)}}a.addEventListener("resize",function(){clearTimeout(d),d=setTimeout(c,300)},!1),a.addEventListener("pageshow",function(a){a.persisted&&(clearTimeout(d),d=setTimeout(c,300))},!1),"complete"===e.readyState?e.body.style.fontSize=12*i+"px":e.addEventListener("DOMContentLoaded",function(){e.body.style.fontSize=12*i+"px"},!1),c(),k.dpr=a.dpr=i,k.refreshRem=c,k.rem2px=function(a){var b=parseFloat(a)*this.rem;return"string"==typeof a&&a.match(/rem$/)&&(b+="px"),b},k.px2rem=function(a){var b=parseFloat(a)/this.rem;return"string"==typeof a&&a.match(/px$/)&&(b+="rem"),b}}(window,window.lib||(window.lib={}));
+  </script>
+</head>
+<body>
+  <div class="wrap">
+    <a href="javascript:void(0);" class="rule-btn" id="rule-btn">活动规则</a>
+
+    <figure class="banner">
+      <img src="../assest/beginYear/bg1.png" alt="">
+    </figure>
+
+    <section class="main">
+
+      <div class="red-wrap">
+
+        <div class="red-box per100" id="per100">
+          <div class="getRed-box">
+              <a href="javascript:void(0);" class="getRed-btn">点击领红包</a>
+          </div>
+        </div>
+        <div class="red-box per50" id="per50">
+          <div class="getRed-box">
+              <a href="javascript:void(0);" class="getRed-btn">点击领红包</a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="red-wrap">
+
+        <div class="red-box per30" id="per30">
+          <div class="getRed-box">
+              <a href="javascript:void(0);" class="getRed-btn">点击领红包</a>
+          </div>
+        </div>
+        <div class="red-box per15" id="per15">
+          <div class="getRed-box">
+              <a href="javascript:void(0);" class="getRed-btn">点击领红包</a>
+          </div>
+        </div>
+
+      </div>
+
+      <a href="javascript:void(0);" class="loan_btn" id="loan_btn">
+        <img src="../assest/beginYear/loan_btn_bg.png" alt="">
+      </a>
+
+      <footer class="footnote">
+        <p>- 更多精彩活动，敬请期待 -</p>
+      </footer>
+    </section>
+
+  </div>
+
+  <div id="rule-mask" class="mask">
+    <figure class="dialog-figure">
+      <img src="../assest/beginYear/rule_template.png" alt="" />
+    </figure>
+    <a href="javascript:void(0);" class="close_btn" id="close_btn">
+      <img src="../assest/beginYear/rule_close_btn.png" alt="" />
+    </a>
+  </div>
+
+</body>
+</html>

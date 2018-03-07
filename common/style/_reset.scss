@@ -1,0 +1,242 @@
+@charset "utf-8";
+
+.clearfix:after, .fix:after {
+  content: ".";
+  clear: both;
+  display: block;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+*,a,button,input,textarea {
+-webkit-tap-highlight-color: transparent;
+}
+html,body{
+width: 100%;
+height: 100%;
+}
+body{
+  -webkit-overflow-scrolling: touch;
+}
+a:focus,button,input,textarea {
+outline: 0;
+border: medium none;
+}
+
+*,blockquote,body,button,dd,dl,dt,fieldset,form,h1,h2,h3,h4,h5,h6,hr,input,legend,li,ol,p,pre,td,textarea,th,ul {
+padding: 0;
+margin: 0
+}
+
+body,button,input,select,table,textarea {
+color: #333;
+font: 1em/1em "Microsoft YaHei","微软雅黑",Helvetica,Arial,sans-serif;
+background: #f5f5f5
+}
+
+button,h1,h2,h3,h4,h5,h6,input,select,textarea {
+font-size: 100%
+}
+
+address,cite,dfn,em,var {
+font-style: normal
+}
+
+code,kbd,pre,samp {
+font-family: courier new,courier,monospace
+}
+
+small {
+font-size: 12px
+}
+
+ol,ul {
+list-style: none
+}
+
+a,a:hover {
+text-decoration: none
+}
+
+sup {
+vertical-align: text-top
+}
+
+sub {
+vertical-align: text-bottom
+}
+
+legend {
+color: #000
+}
+
+fieldset,img {
+border: 0
+}
+
+table {
+border-collapse: collapse;
+border-spacing: 0
+}
+
+textarea {
+resize: none
+}
+
+input::-ms-clear {
+display: none
+}
+
+html {
+overflow-y: auto
+}
+
+body {
+width: 100%;
+min-width: 320px;
+color: #727171;
+}
+
+pre {
+white-space: pre-wrap;
+white-space: -moz-pre-wrap;
+white-space: -pre-wrap;
+white-space: -o-pre-wrap;
+word-wrap: break-word
+}
+.confirm {
+width: 90%;
+top: 35%;
+margin-left: -45%;
+background: #fff;
+border-radius: 8px;
+padding-top: 1rem;
+color: #333;
+display: none
+}
+
+.confirm p,.confirm span {
+padding: 0 10px;
+text-align: center
+}
+
+.confirm span {
+display: block;
+line-height: 2rem;
+font-size: 1.5rem
+}
+
+.confirm p {
+margin-top: 1rem
+}
+
+.confirm .confirm_btm {
+display: -webkit-box;
+display: -ms-box;
+display: -moz-box;
+display: -o-box;
+height: 3rem;
+border-top: 1px #dfdfdf dashed;
+margin-top: 2rem
+}
+
+.confirm .confirm_btm a {
+display: block;
+-webkit-box-flex: 1;
+height: 3rem;
+line-height: 3rem;
+text-align: center;
+color: #333
+}
+.confirm .confirm_btm a.m {
+color: #ff4037
+}
+
+.confirm .confirm_btm i {
+display: block;
+width: 1px;
+height: 2.6rem;
+background: #999799;
+margin-top: .2rem
+}
+
+.confirm2 .confirm_btm {
+padding: 1rem
+}
+
+.confirm2 a.btn_cancel {
+background: #ff4037;
+border-radius: 8px;
+color: #fff
+}
+
+.confirm2>p em,.confirm2>span {
+color: #ff4037
+}
+
+.wherther {
+width: 86%;
+background: #fff;
+border-radius: 8px;
+top: 30%;
+margin-left: -43%
+}
+
+.wherther p {
+padding: 1.75rem 1rem;
+line-height: 1.5rem
+}
+
+.wherther .btnCom {
+border-top: 1px #dadade solid;
+height: 3.75rem;
+display: -moz-box;
+display: -webkit-box
+}
+
+.wherther .btnCom button {
+display: block;
+-moz-box-flex: 1;
+-webkit-box-flex: 1;
+background: #fff;
+color: #007aff;
+height: 100%
+}
+
+.wherther .btnCom #btnTrue {
+border-radius: 0 0 8px 8px
+}
+
+.wherther .btnCom #btnCancel {
+border-radius: 8px 0 0 8px
+}
+
+.wherther .btnCom i {
+display: block;
+height: 100%;
+width: 1px;
+background: #dadade
+}
+.fl{
+float: left;
+}
+.fr{
+float:right;
+}
+.mg-t36{
+margin-top: .48rem!important;
+}
+.mr-t20{
+margin-top: .2667rem;
+}
+.mask{
+  position: fixed;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  background:rgba(0,0,0,0.5);
+  display: none;
+  z-index: 103;
+}
+
