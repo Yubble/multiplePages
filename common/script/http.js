@@ -1,8 +1,8 @@
 let hostname = '';
 if (Env == 'pro') {
-    hostname = 'https://app.doraemoney.com/';
+    hostname = '生产地址';
 } else {
-    hostname = 'https://apptest.doraemoney.com/';
+    hostname = '测试地址';
 }
 
 export function $get (url, data) {

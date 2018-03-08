@@ -9,10 +9,10 @@ let wxConfig = {
     let imgPath = "";
     if (Env == 'pro') {
       // 线上地址
-      imgPath = "/activity/WebRoot/dist/static/img/shareIcon/";
+      imgPath = "线上缩略图地址";
     } else {
       // 开发地址
-      imgPath = "/WebRoot/dist/static/img/shareIcon/";
+      imgPath = "开发缩略图地址";
     }
 
     var link = "";
@@ -61,10 +61,10 @@ let wxConfig = {
 let urlStr = '';
 if (Env == 'pro') {
   // 线上地址
-  urlStr = "https://app.doraemoney.com/activity/weixinGetAccToken";
+  urlStr = "线上获取微信token地址";
 } else {
   // 开发地址
-  urlStr = "https://apptest.doraemoney.com/activity/weixinGetAccTokenTest";
+  urlStr = "开发获取微信token的地址";
 }
 
 $.ajax({

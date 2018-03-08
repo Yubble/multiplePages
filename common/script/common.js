@@ -4,12 +4,12 @@ let shareHost = '',
     localhost = '';
 if (host == 'app.doraemoney.com' || host == 'ddstatic.9fbank.com') {
     window.Env = 'pro';
-    localhost = 'https://app.doraemoney.com/';
-    shareHost = 'https://app.doraemoney.com/';
+    localhost = '生产地址';
+    shareHost = '生产分享地址';
 } else {
     window.Env = 'dev'
-    localhost = 'https://apptest.doraemoney.com/';
-    shareHost = 'https://webtest.doraemoney.com/';
+    localhost = '开发地址';
+    shareHost = '开发分享地址';
 }
 
 // 获取url中的参数
@@ -119,12 +119,10 @@ const animateEnd = (id, fn) => {
 
 //跳转到登录页面
 const goLogin = () => {
-  location.href='http://w2l/?params={"iosName":"LoginViewController","androidName":"token_expired"}';
 }
 
 // 跳转到借款页面
 const goLoan = () => {
-  window.location.href='http://w2l/?params={"iosName":"LoanViewController","androidName":"HomeFragment", "loanType": "8"}'
 }
 
 // 调用APP Loading方法
@@ -223,35 +221,7 @@ const buryPoints = (text1, text2, param) => {
 
 // 跳转到下载页面
 const goDownLoad = () => {
-  if(request.deviceType=='android'){
-    if(getParam('proId') == '9c9e0b9f44212014941688d193838c00'){//魅族
-        window.location.href = 'http://app.meizu.com/apps/public/detail?package_name=com.jfbank.doraemoney';
-        return;
-    }else if(getParam('proId') == "afbd0a4bd17ac2fabad2575fb9e1e5d5"){//vivo
-        window.location.href = 'http://info.appstore.vivo.com.cn/detail/1539453?source=7';
-        return;
-    }else if(getParam('proId') == '8b1d77eb146a2266928cfe2e08a8bf87'){//oppo
-        window.location.href = 'http://store.oppomobile.com/product/0010/966/591_1.html?from=1152_1';
-        return;
-    }else if(getParam('proId') == "b06ef803064456709b026479498993fa"){//小米信息流
-        window.location.href = 'http://app.mi.com/details?id=com.jfbank.doraemoney&ref=search';
-        return;
-    }else if(getParam('proId') == "85417541be8ea49da3ff5a5351b11508"){//百度信息流
-        window.location.href = 'http://shouji.baidu.com/software/11377841.html';
-        return;
-    }else if(getParam('proId') == "9103ace98bdca35aa4560bbe194406eb"){//360信息流
-        window.location.href = 'http://zhushou.360.cn/detail/index/soft_id/3423470?recrefer=SE_D_玖富叮当';
-        return;
-    }else{
-        //安卓下  非微信打开 去 下载
-        window.location.href = 'http://fusion.qq.com/app_download?appid=1105568242&platform=qzone&via=QZ.MOBILEDETAIL.QRCODE&u=1723439386';
-        return;
-    }
-  } else {
-    //ios下  非微信打开 去 下载
-    window.location.href = 'https://itunes.apple.com/cn/app/id1136149621?mt=8';
-    return;
-  }
+  // 跳到下载的方法
 }
 
 // 中奖名单滚动
