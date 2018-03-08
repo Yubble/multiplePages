@@ -34,7 +34,7 @@ $(function (){
   }
 
   // 获取所有红包信息
-  $post('pmtActivity/activityLog', {
+  $post('获取红包信息', {
     token: request.token,
     activityCode: 1008
   });
@@ -43,7 +43,7 @@ $(function (){
   // 给立即借款绑定事件
   $("#loan_btn").click(function() {
     // 获取所有红包信息
-    $post('pmtActivity/activityLog', {
+    $post('记录人员信息', {
       token: request.token,
       activityCode: 1008
     }).then(() => {
@@ -53,7 +53,7 @@ $(function (){
   });
 
   // 获取所有红包信息
-  $post('market/redmoney/findRedCenter', {
+  $post('获取红包信息', {
     token: request.token,
     page:1,
     paging:10000,
@@ -119,7 +119,7 @@ $(function (){
     }
 
     drawRed() {
-      $post('market/redmoney/redCenterGetRed', {
+      $post('领取红包', {
         token: request.token,
         redid: this.redId
       }).then((result) => {
